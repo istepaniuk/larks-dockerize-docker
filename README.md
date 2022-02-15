@@ -1,9 +1,12 @@
-# This fork
+# This is a fork
+
+... of [larsks/dockerize](https://github.com/larsks/dockerize)
 
 This fork ads a debian based Dockerfile to larsks/dockerize so it can be used in multistage Docker builds.
 
 This image does not support docker itself (i.e. does not support dind). So it would only make sense to use
 dockerize passing the `--no-build` and `--output-dir` options, then `COPY` the output to an image built `FROM scratch`.
+
 
 # Dockerize
 
